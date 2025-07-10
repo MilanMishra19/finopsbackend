@@ -114,7 +114,7 @@ public ServletContextInitializer sameSiteConfig() {
 
 @Bean
 public CookieSameSiteSupplier cookieSameSiteSupplier() {
-    return CookieSameSiteSupplier.ofLax().whenHasName("JSESSIONID");
+    return CookieSameSiteSupplier.ofNone().whenHasName("JSESSIONID");
 }
 
     @Bean
