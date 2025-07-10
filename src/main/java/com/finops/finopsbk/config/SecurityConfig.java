@@ -41,7 +41,6 @@ public class SecurityConfig {
                 .requestMatchers(
                     "/login",
                     "/logout",
-                    "/api/analysts/me",
                     "/api/accounts",
                     "/api/accounts/**",
                     "/api/transactions",
@@ -50,7 +49,6 @@ public class SecurityConfig {
                     "/api/alerts/**",
                     "/api/alerts/resolve/**",
                     "/api/transactions/fraud/**",
-                    "/api/analysts/**"
                 ).permitAll()
                 .anyRequest().authenticated()
             )
@@ -116,7 +114,7 @@ public ServletContextInitializer sameSiteConfig() {
 
 @Bean
 public CookieSameSiteSupplier cookieSameSiteSupplier() {
-    return CookieSameSiteSupplier.ofStrict().whenHasName("JSESSIONID");
+    return CookieSameSiteSupplier.ofLax().whenHasName("JSESSIONID");
 }
 
     @Bean
