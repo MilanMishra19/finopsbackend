@@ -39,7 +39,7 @@ public class SecurityConfig {
                 .requestMatchers(
                     "/login",
                     "/logout",
-                    "/api/analysts",
+                    "/api/analysts/me",
                     "/api/accounts",
                     "/api/accounts/**",
                     "/api/transactions",
