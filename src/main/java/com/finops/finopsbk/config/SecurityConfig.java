@@ -19,7 +19,7 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import jakarta.servlet.SessionCookieConfig;
 import org.springframework.boot.web.servlet.server.CookieSameSiteSupplier;
-import jakarta.servlet.SessionCookieConfig;
+import org.springframework.boot.web.servlet.ServletContextInitializer;
 import java.util.List;
 
 @Configuration
