@@ -48,7 +48,7 @@ public class SecurityConfig {
                     "/api/alerts",
                     "/api/alerts/**",
                     "/api/alerts/resolve/**",
-                    "/api/transactions/fraud/**",
+                    "/api/transactions/fraud/**"
                 ).permitAll()
                 .anyRequest().authenticated()
             )
