@@ -1,8 +1,6 @@
 
 ---
 
-### ✅ `backend/README.md` (Spring Boot + PostgreSQL + Render)
-
 ```markdown
 # FinOps Backend ⚙️
 
